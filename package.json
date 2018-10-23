@@ -1,0 +1,23 @@
+{
+  "name": "realtime-markdown",
+  "version": "1.0.0",
+  "description": "Realtime markdown viewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sohieeb/realtime-markdown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sohieeb/realtime-markdown/issues"
+  },
+  "homepage": "https://github.com/Sohieeb/realtime-markdown#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
