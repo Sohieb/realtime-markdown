@@ -28,20 +28,20 @@ require('redis');
 
 
 // set up redis server
-var redisClint;
+var redisClient;
 console.log(process.env.REDISTIGI_URL);
 if (process.env.REDISTIGI_URL) {
     var rtg = require("url").parse(process.env.REDISTIGI_URL);
-    redisClint = require("redis").createClient(rtg.port, rtg.hostname);
-    redisClint.auth(rtg.auth.split(":")[1]);
+    redisClient = require("redis").createClient(rtg.port, rtg.hostname);
+    redisClient.auth(rtg.auth.split(":")[1]);
 } else {
-    redisClint = require("redis").createClient();
+    redisClient = require("redis").createClient();
 }
 
 
 // options for sharejs
 var options = {
-    db: {type: 'redis', clint: redisClint}
+    db: {type: 'redis', clint: redisClient}
 };
 
 
