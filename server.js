@@ -13,18 +13,17 @@ app.use(express.static(__dirname + '/public'));
 
 
 // routes for app
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
     res.render('pad');
 });
 
-app.get('/(:id)', function(req, res) {
+app.get('/(:id)', function (req, res) {
     res.render('pad');
 });
 
 
 // get sharejs dependencies
 var sharejs = require('share');
-require('redis');
 
 
 // set up redis server
@@ -41,7 +40,7 @@ if (process.env.REDISTIGI_URL) {
 
 // options for sharejs
 var options = {
-    db: {type: 'redis', clint: redisClient}
+    db: { type: 'redis', clint: redisClient }
 };
 
 

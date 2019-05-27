@@ -2,7 +2,7 @@
   "name": "realtime-markdown",
   "version": "1.0.0",
   "description": "Realtime markdown viewer",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -22,5 +22,9 @@
     "express": "^4.17.1",
     "redis": "^2.8.0",
     "share": "^0.6.3"
+  },
+  "engines": {
+    "node": "8.9.x",
+    "npm": "6.9.x"
   }
 }
